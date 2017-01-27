@@ -1,0 +1,216 @@
+html {
+    font-family: 'Roboto', serif;
+}
+* {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition:    all 0.2s ease;
+    -ms-transition:     all 0.2s ease;
+    -o-transition:      all 0.2s ease;
+    box-sizing: border-box;
+    border-radius: 0px;
+}
+
+body{
+    background: #eaebeb;
+    color: #333333;
+}
+
+.analysis-container {
+    width: 100%;
+    height: 100%;
+    padding: 2% 3% 0 3%;
+}
+.inner-container {
+    width: 100%;
+}
+
+.header-box {
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+.logo-box {
+    height: 90%;
+    width: 50%;
+    float: left;
+
+}
+.logo-img {
+    float: left;
+    width: 84px;
+    height: 84px;
+    margin-right: 20px;
+    background: url('logo.png');
+}
+.logo-text {
+    width: auto;
+    height: 90%;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #2c3e50;
+}
+.logo-sub {
+    padding-left: 10px;
+    font-size: 35px;
+    color: #333333;
+}
+.detail-box {
+    margin-top: -20px;
+    height: 90%;
+    width: 50%;
+    float: left;
+}
+.right-container {
+    width: 300px;
+    float: right;
+    margin-right: 20px;
+}
+.detail-key {
+    float:left;
+    width: 200px;
+    text-align: left;
+}
+.detail-value {
+    float: left;
+    width: 100px;
+    text-align: right;
+}
+.detail-divider {
+    margin: 7px 0 7px 0;
+    height: 1px;
+    width: 300px;
+    float: left;
+    background: #333;
+}
+.bottom-container{
+    margin-top: 30px;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.words-container {
+    height: 550px;
+    float: left;
+    width: 32%;
+    min-width: 400px;
+    margin-right: 2%;
+}
+.words-box {
+    float: left;
+    padding-top: 40px;
+    width: 100%;
+    height: 200px;
+    line-height: 60px;
+    background: #2c3e50;
+    color: #f1f1f1;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+.words-bottom {
+    padding: 7% 0 0 0;
+    float: left;
+    height: 400px;
+    width: 100%;
+    background: #f1f1f1;
+}
+.donut-container {
+    float: left;
+    width: 120%;
+    margin-left: -10%;
+    max-height: 300px;
+    max-width: 650px;
+}
+.color-bar {
+    float: left;
+    background: #333333;
+    height: 20px;
+    width: 90%;
+    margin: 5%;
+    font-size: 16px;
+}
+.color-bar-entry{
+    float: left;
+    height: 100%;
+    width: 20%;
+}
+.images-container {
+     height: 550px;
+     float: left;
+     width: 32%;
+     min-width: 400px;
+    margin-right: 2%;
+ }
+.images-box {
+    float: left;
+    padding-top: 40px;
+    width: 100%;
+    height: 200px;
+    line-height: 60px;
+    background: #2980b9;
+    color: #f1f1f1;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+.images-bottom {
+    float: left;
+    height: 400px;
+    width: 100%;
+    background: #f1f1f1;
+    padding:  2%;
+}
+.images-entry {
+    float: left;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    height: 140px;
+    width: 32%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* gg */
+.gg-container {
+    height: 550px;
+    float: left;
+    width: 32%;
+    min-width: 400px;
+}
+.gg-box {
+    float: left;
+    padding-top: 40px;
+    width: 100%;
+    height: 200px;
+    line-height: 60px;
+    background: #3498db;
+    color: #f1f1f1;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+.gg-bottom {
+    padding: 1% 1% 0 7%;
+    float: left;
+    height: 400px;
+    width: 100%;
+    color: #333333;
+    line-height: 80px;
+    font-size: 38px;
+    font-weight: 600;
+    background: #f1f1f1;
+}
+.check-mark {
+    font-size: 35px;
+    color: #2ec866;
+    font-weight: 700;
+}
+.sitemap-entry {
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 10%;
+    display: block;
+    margin-top: -30px;
+}

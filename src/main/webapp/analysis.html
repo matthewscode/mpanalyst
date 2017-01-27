@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MP Site Analysis</title>
+    <link rel="icon" href="resources/img/Select.png">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular-route.js"></script>
+    <script src="../resources/js/Chart.min.js"></script>
+    <script src="../resources/js/angular-chart.min.js"></script>
+    <!--<script src="resources/angular/Chart.min.js"></script>-->
+    <!--<script src="resources/angular/angular-chart.min.js"></script>-->
+    <script src="../resources/app/se-an-app.js"></script>
+    <link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+</head>
+<body data-ng-app="seAnApp">
+<div class="analysis-container" ng-controller="mainCtrl">
+    <div class="inner-container" data-ng-init="init()">
+        <div class="header-box">
+            <div class="logo-box">
+                <div class="logo-img"></div>
+                <div class="logo-text">
+                    {{ analysis.clientName }}<br/>
+                    <span class="logo-sub">Site Analysis</span>
+                </div>
+            </div>
+            <div class="detail-box">
+                <div class="right-container">
+                    <div class="detail-key">
+                    Words Found
+                    </div>
+                    <div class="detail-value">
+                    {{ analysis.foundWords }}
+                    </div>
+                    <div class="detail-divider"></div>
+                    <div class="detail-key">
+                        Images Found
+                    </div>
+                    <div class="detail-value">
+                        {{ analysis.foundImages}}
+                    </div>
+                    <div class="detail-divider"></div>
+                    <div class="detail-key">
+                        Meta Found
+                    </div>
+                    <div class="detail-value">
+                        {{ analysis.uniqueMeta}}
+                    </div>
+                    <div class="detail-divider"></div>
+                    <div class="detail-key">
+                        Analyst
+                    </div>
+                    <div class="detail-value">
+                        {{ analysis.analyst}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="words-container">
+                <div class="words-box">
+                    WORDS<br/>
+                    {{ analysis.words }}
+                </div>
+                <div class="words-bottom">
+                    <!--["#2C3E50", "#2980B9", "#333333", "#b1b1b1",  "#3498DB","#ECF0F1", "#b1b1b1" ]-->
+                    <!--<div class="color-bar">-->
+                        <!--<div class="color-bar-entry" style="background:#2C3E50;"></div>-->
+                        <!--<div class="color-bar-entry" style="background:#2980B9;"></div>-->
+                        <!--<div class="color-bar-entry" style="background:#333333;"></div>-->
+                        <!--<div class="color-bar-entry" style="background:#b1b1b1;"></div>-->
+                        <!--<div class="color-bar-entry" style="background:#3498DB;"></div>-->
+                    <!--</div>-->
+                    <div class="donut-container">
+                        <canvas id="doughnut" class="chart chart-doughnut"
+                                chart-data="directorySizeList" chart-labels="directoryList">
+                        </canvas>
+                    </div>
+
+                </div>
+            </div>
+            <div class="images-container">
+                <div class="images-box">
+                    IMAGES<br/>
+                    {{ analysis.images }}
+                </div>
+                <div class="images-bottom">
+                    <div class="images-entry" ng-repeat="img in imageList" style="background-image: url({{ img }});"></div>
+                </div>
+            </div>
+            <div class="gg-container">
+                <div class="gg-box">
+                    GLOBAL GROWTH<br/>
+                    ELIGIBLE
+                </div>
+                <div class="gg-bottom">
+                    <i class="material-icons check-mark">done</i> Easy Link <br/>
+                    <i class="material-icons check-mark">done</i> URL Optimization<br/>
+                    <i class="material-icons check-mark">done</i> On-Site Search<br/>
+                    <i class="material-icons check-mark">done</i> Global Sitemap
+                    <span ng-repeat="sm in sitemapList" class="sitemap-entry">{{ sm }}</span>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
