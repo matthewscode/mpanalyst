@@ -2,7 +2,7 @@
  * Created by Matthew on 11/24/2016.
  */
 
-var getAnalysisPattern = 'http://sestation.herokuapp.com/api/analysis/get/';
+var getAnalysisPattern = 'https://sestation.herokuapp.com/api/analysis/get/';
 var seAnApp = angular.module('seAnApp', ['chart.js']);
 seAnApp.config(function() {
 });
